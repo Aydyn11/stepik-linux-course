@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converted from Markdown</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2, h3 { color: #333; margin-top: 1.5em; margin-bottom: 0.5em; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; }
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      line-height: 1.4;
+    }
+    blockquote {
+      border-left: 4px solid #ddd;
+      margin: 1em 0;
+      padding-left: 20px;
+      color: #666;
+      font-style: italic;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+    ul, ol {
+      margin: 1em 0;
+      padding-left: 2em;
+    }
+    li {
+      margin: 0.5em 0;
+    }
+  </style>
+</head>
+<body>
+<h1>Введение в Linux</h1>
+<h2>Итоговая презентация по курсу Stepik.org</h2>
+<p><strong>Садыгов Айдын Гейсар оглы</strong></p>
+<p><strong>Дата прохождения:</strong> 13.05.2026</p>
+<p><strong>Сертификат:</strong> <a href="https://stepik.org/cert/3246563">https://stepik.org/cert/3246563</a></p>
+<hr>
+<h2>Слайд 1: Что такое Linux?</h2>
+<ul>
+<li><strong>Linux</strong> — семейство Unix-подобных операционных систем</li>
+<li>Ядро Linux + системные утилиты GNU</li>
+<li><strong>Особенности:</strong><ul>
+<li>Бесплатное распространение</li>
+<li>Открытый исходный код</li>
+<li>Высокая стабильность и безопасность</li>
+<li>Широкое применение: от серверов до встраиваемых систем</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>Слайд 2: Основы командной строки</h2>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Действие</th>
+<th>Пример</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>pwd</code></td>
+<td>Показать текущую папку</td>
+<td><code>/home/user</code></td>
+</tr>
+<tr>
+<td><code>ls</code></td>
+<td>Список файлов</td>
+<td><code>ls -la</code> (все файлы подробно)</td>
+</tr>
+<tr>
+<td><code>cd</code></td>
+<td>Сменить директорию</td>
+<td><code>cd /home</code>, <code>cd ..</code></td>
+</tr>
+<tr>
+<td><code>mkdir</code></td>
+<td>Создать папку</td>
+<td><code>mkdir new_folder</code></td>
+</tr>
+<tr>
+<td><code>rm</code></td>
+<td>Удалить файл/папку</td>
+<td><code>rm -r folder</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Слайд 3: Файловая система Linux</h2>
+<ul>
+<li><strong>Иерархическая структура</strong> — всё начинается с корня <code>/</code></li>
+<li><strong>Важные каталоги:</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Каталог</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/home</code></td>
+<td>Домашние папки пользователей</td>
+</tr>
+<tr>
+<td><code>/etc</code></td>
+<td>Конфигурационные файлы</td>
+</tr>
+<tr>
+<td><code>/var</code></td>
+<td>Переменные данные (логи)</td>
+</tr>
+<tr>
+<td><code>/tmp</code></td>
+<td>Временные файлы</td>
+</tr>
+<tr>
+<td><code>/usr</code></td>
+<td>Пользовательские программы</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Слайд 4: Права доступа</h2>
+<ul>
+<li><p><strong>Три типа прав:</strong></p>
+<ul>
+<li><code>r</code> (read) — чтение</li>
+<li><code>w</code> (write) — запись</li>
+<li><code>x</code> (execute) — выполнение</li>
+</ul>
+</li>
+<li><p><strong>Три категории пользователей:</strong></p>
+<ul>
+<li>Владелец (owner)</li>
+<li>Группа (group)</li>
+<li>Остальные (others)</li>
+</ul>
+</li>
+<li><p><strong>Пример:</strong> <code>chmod 755 file.sh</code></p>
+<ul>
+<li><code>7</code> = rwx для владельца</li>
+<li><code>5</code> = r-x для группы</li>
+<li><code>5</code> = r-x для остальных</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>Слайд 5: Текстовые редакторы</h2>
+<h3>nano (простой для новичков)</h3>
+<ul>
+<li><code>nano file.txt</code> — открыть/создать</li>
+<li><code>Ctrl+O</code> — сохранить</li>
+<li><code>Ctrl+X</code> — выйти</li>
+</ul>
+<h3>vim (мощный, требует изучения)</h3>
+<ul>
+<li><code>vim file.txt</code> — открыть</li>
+<li><code>i</code> — режим вставки</li>
+<li><code>Esc</code> — выйти из режима вставки</li>
+<li><code>:w</code> — сохранить</li>
+<li><code>:q</code> — выйти</li>
+<li><code>:q!</code> — выйти без сохранения</li>
+</ul>
+<hr>
+<h2>Слайд 6: Bash-скрипты</h2>
+<h3>Пример простого скрипта <code>hello.sh</code>:</h3>
+<pre><code class="language-bash">#!/bin/bash
+echo &quot;Hello, Linux!&quot;
+name=&quot;User&quot;
+echo &quot;Welcome, $name&quot;
+</code></pre>
+
+</body>
+</html>
